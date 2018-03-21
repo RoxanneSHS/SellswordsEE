@@ -26,7 +26,7 @@ The mod allows the player to meet Kimmuriel Oblodra, the current leader of Brega
 D'aerthe, and travel with him to Menzoberranzan to confront a powerful Matron
 Mother, rescue Jarlaxle, and receive some unexpected help from Artemis Entreri.
 
-The mod begins in Chapter 6 as soon as you enter Waukeen's Promenade in Athkatla.
+The mod begins in Chapter 6 (EET 18) as soon as you enter Waukeen's Promenade in Athkatla.
 Throne of Bhaal expansion pack is required.
 
 ----------------
