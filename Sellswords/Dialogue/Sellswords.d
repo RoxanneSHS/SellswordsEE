@@ -1527,7 +1527,7 @@ CHAIN O#LLJEY j1.3
 @575 /* The wardstone, you say? */
 = @576 /* Well, you'll get it over my dead body. Men, to me! */
 DO ~SetGlobal("O#LLQuest","GLOBAL",27)
-AddExperienceParty(60000)
+AddExperienceParty(6000)
 AddJournalEntry(@10024,QUEST)
 Enemy()~
 EXIT
@@ -1836,7 +1836,7 @@ CHAIN O#LLFIG2 f2.3
 == O#LLFIG3 @683 /* He will be despised, no doubt. Let's take him to the priestesses. They'll find his mage ally in no time. And you, surfacer, are allowed to escape with your life. Be grateful for it. */
 DO ~SetGlobal("O#LLFIG1","GLOBAL",3)
 AddJournalEntry(@10004,QUEST)
-AddExperienceParty(40000)
+AddExperienceParty(4000)
 ActionOverride("O#LLFIGM",EscapeArea())
 ActionOverride("O#LLFIG1",EscapeArea())
 ActionOverride("O#LLFIG2",EscapeArea())
@@ -1972,7 +1972,7 @@ END
 
 CHAIN O#LLNELR l1.1
 @726 /* Indeed? Thank you for warning me. And watch your back here, Bhaalspawn. */
-DO ~AddExperienceParty(40000)
+DO ~AddExperienceParty(4000)
 EscapeArea()~
 EXIT
 
@@ -2197,7 +2197,7 @@ CHAIN O#LLILL1 i2.2
 == MAZZYJ IF ~InParty("Mazzy") InMyArea("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @809 /* As I suspected. The squids have no true honor. */
 == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @810 /* There is no point in arguing with these creatures, <CHARNAME>. Let us go. */
 == O#LLILL1 @811 /* *Leave now.* */
-DO ~AddExperienceParty(60000)
+DO ~AddExperienceParty(6000)
 SetGlobal("O#LLKimmurielTasks","GLOBAL",6)~
 EXIT
 
@@ -2262,7 +2262,7 @@ END
 CHAIN O#LLRIEL r3.1
 @837 /* Good. Their abhorrent tales about some brown-skinned abominations will not be permitted to exist! */
 DO ~GiveItemCreate("MISC41",Player1,4,0,0)
-AddExperienceParty(40000)
+AddExperienceParty(4000)
 EraseJournalEntry(@10012)
 AddJournalEntry(@10013,QUEST_DONE)
 SetGlobal("O#LLPriestessBrown","GLOBAL",2)~
@@ -2320,7 +2320,7 @@ END
 CHAIN O#LLBROW b1.5
 @868 /* Oh... thank you! We will leave and gather other servants of Eilistraee in Ched Nasad and Ust Natha. The journey is long, but the Dark Maiden shall guide us. */
 == O#LLBROW @869 /* Goodbye, kind stranger. I only regret that I have nothing to give you. */
-DO ~AddExperienceParty(40000)
+DO ~AddExperienceParty(4000)
 EraseJournalEntry(@10012)
 AddJournalEntry(@10014,QUEST_DONE)
 SetGlobal("O#LLPriestessBrownLetGo","GLOBAL",1)
@@ -2415,7 +2415,7 @@ CHAIN O#LLKOBA k2.1
 @900 /* Oh, glorious day! The gods themselves will smile in heavens while looking at your sharp and blunt weapons with great respect! May every fruit of your loins be blessed and... oh, by Moradin's hammer, enough of this rot! */ 
 DO ~GiveItemCreate("RING19","O#LLKOBA",1,0,0)~
 == O#LLKOBA @901 /* The house is free for free, boys. Let's kill this one! */ 
-DO ~AddExperienceParty(40000)
+DO ~AddExperienceParty(4000)
 EraseJournalEntry(@10015)
 AddJournalEntry(@10016,QUEST_DONE)
 SetGlobal("O#LLHouseShades","GLOBAL",2)
@@ -2489,7 +2489,7 @@ EXIT
 CHAIN O#LLLAVA l2.2
 @929 /* It cannot be! It's gone? It's really gone? How... how did you?.. No, wait, I don't want to know. */
 = @930 /* I am free! I can actually leave this house... oh, wait, it's my house. In any case, I need to take a walk. But I won't let you leave without your reward, beautiful stranger. Wear these boots proudly. And I'll probably need to check my coffers, lockers and chests later. These cursed demons are all lowly thieves, I know it! */
-DO ~AddExperienceParty(40000)
+DO ~AddExperienceParty(4000)
 EraseJournalEntry(@10017)
 AddJournalEntry(@10018,QUEST_DONE)
 GiveItemCreate("BOOT01",Player1,1,0,0)
@@ -2584,7 +2584,7 @@ CHAIN O#LLDEM d1.sold
 @968 /* Well... you've convinced me. Sold! */
 == O#LLDEM @969 /* Now, then, your soul is mine, so it is time for me to go. Here is the down payment on your soul. */
 DO ~SetGlobal("O#LLLAVAQuestDemonDealt","GLOBAL",1)
-AddExperienceParty(20000)
+AddExperienceParty(2000)
 GiveGoldForce(2000)~
 == O#LLDEM @970 /* You will receive the remainder over the next ten years, heheh. And, of course, you have my word that I shall now leave and never return. You and Lavaes are free, and... wait. */
 == O#LLDEM @971 /* NO! You charlatan! You dirty, filthy, cheating piece of slime! Someone has already laid claim to your soul, and our bargain is null and void... except that I have already given you my word, and in this instance, it is binding. */
@@ -2644,14 +2644,14 @@ EXIT
 CHAIN IF ~Global("O#LLBlackArena","GLOBAL",2)~ THEN O#LLDARR d2
 @992 /* The first challenge is complete. Prepare for the second one! */
 DO ~SetGlobal("O#LLBlackArena","GLOBAL",3)
-AddExperienceParty(60000)
+AddExperienceParty(6000)
 ApplySpell(Myself,DRYAD_TELEPORT)~
 EXIT
 
 CHAIN IF ~Global("O#LLBlackArena","GLOBAL",4)~ THEN O#LLDARR d3
 @993 /* And you survive the second challenge! No rest for the wicked: the final one awaits. */
 DO ~SetGlobal("O#LLBlackArena","GLOBAL",5)
-AddExperienceParty(60000)
+AddExperienceParty(6000)
 ApplySpell(Myself,DRYAD_TELEPORT)~
 EXIT
 
@@ -2659,7 +2659,7 @@ CHAIN IF ~Global("O#LLBlackArena","GLOBAL",6)~ THEN O#LLDARR d4
 @994 /* Unbelievable. Some weak <PRO_RACE> had done what our finest warriors could not. Seeing how you are still alive, I hereby declare you the victor - and here is your ill-deserved reward. Surface gold for a surfacer. Don't mind the blood. */
 == O#LLDARR @995 /* Walk carefully, <PRO_RACE>. I expect none would try to challenge you openly after this victory, but daggers in the back are only too common in Menzoberranzan. Do not chance the walkways alone. */
 DO ~GiveGoldForce(6000)
-AddExperienceParty(60000)
+AddExperienceParty(6000)
 EraseJournalEntry(@10019)
 AddJournalEntry(@10020,QUEST_DONE)
 GiveItemCreate("o#llbr1",Player1,1,0,0)
@@ -3178,7 +3178,7 @@ EXIT
 CHAIN IF ~PartyHasItem("O#LLSpel")~ THEN O#LLZEDE z2
 @1107 /* You... you have my spellbook! I can feel the emanations. My life has been saved! Please, surfacer, take this as a token of my appreciation. */
 DO ~TakePartyItem("O#LLSpel")
-AddExperienceParty(20000)
+AddExperienceParty(2000)
 GiveItemCreate("SCRL8G",Player1,1,0,0)
 ApplySpell(Myself,DRYAD_TELEPORT)~
 EXIT
@@ -3193,7 +3193,7 @@ CHAIN IF ~PartyHasItem("O#LLCure")~ THEN O#LLBOR z2
 @1109 /* The cure for my blindness! It smells of deep mushrooms and deathroot, just like the priestesses said. Give it to me, let me... you... I can see your face! You are a surfacer, yet you would show kindness to a drow warrior? Amazing. */
 == O#LLBOR @1110 /* Let no one call me ungrateful. Here is your reward, <PRO_RACE>. You deserve every coin. */
 DO ~TakePartyItem("O#LLCure")
-AddExperienceParty(20000)
+AddExperienceParty(2000)
 GiveGoldForce(2000)
 MoveToPoint([385.250])
 DestroySelf()~
@@ -3229,7 +3229,7 @@ CHAIN O#LLMERE m1.3
 @1126 /* Oh. I... Really? Thank you! */
 == O#LLMERE @1127 /* You are the bravest, most wonderful <PRO_MANWOMAN> I've ever met. One day I will tell my child about you. For the rest of my life you will have my prayers. */
 DO ~TakePartyGold(1000)
-AddExperienceParty(20000)
+AddExperienceParty(2000)
 MoveToPoint([552.1174])
 DestroySelf()~
 EXIT
