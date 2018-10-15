@@ -2,7 +2,7 @@ BACKUP ~Sellswords/Backup~
 //AUTHOR ~http://forums.pocketplane.net~
 SUPPORT ~Roxanne - https://baldursextendedworld.com/Branched-EET-Updates-4 or roxanne@baldursextendedworld.com~
 
-VERSION ~v5.1~
+VERSION ~v6.1~
 
 
 ALWAYS
@@ -40,6 +40,7 @@ AUTO_TRA ~Sellswords/%s~
 LANGUAGE ~English~ ~English~ ~Sellswords/English/Setup-Sellswords.tra~
 LANGUAGE ~Russian~ ~Russian~ ~Sellswords/Russian/Setup-Sellswords.tra~
 LANGUAGE ~German (by Gerri)~ ~German~ ~Sellswords/German/Setup-Sellswords.tra~
+LANGUAGE ~Chinese (by Merzbau)~ ~Schinese~ ~Sellswords/Schinese/Setup-Sellswords.tra~
 
 BEGIN @0
 

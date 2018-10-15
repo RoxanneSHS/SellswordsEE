@@ -335,6 +335,9 @@ winLAME					http://winlame.sourceforge.net
 -------------------
 6. Version History
 -------------------
+Version 6.1
+- Chinese translation
+
 Version 5.1
 - Support for EET
 - PVRZ for BG2EE and EET
