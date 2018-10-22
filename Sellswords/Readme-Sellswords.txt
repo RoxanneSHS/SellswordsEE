@@ -1,5 +1,5 @@
   		     The Sellswords MOD for Baldur's Gate II
-				   Version 5.1
+				   Version 6.1
 			  A Pocket Plane Group Project
 			   http://www.pocketplane.net
 
